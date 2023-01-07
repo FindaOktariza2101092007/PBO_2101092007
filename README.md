@@ -1,7 +1,7 @@
 # Modul PBO TEORI finda
 
 
-//![Img 1](image/th.jpg)
+![Img 1](image/.jpg)
 
 ## Agenda
 
