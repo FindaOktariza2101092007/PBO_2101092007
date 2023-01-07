@@ -1,43 +1,107 @@
-# Modul PBO TEORI finda
+# Modul 2 PBO Teori_Finda Oktariza
+
+## Pengenalan Bahasa JAVA
 
 
-![Img 1](image/th.jpg)
 
-## Agenda
+### Sejarah Singkat Java
+Java telah mengakomodasi hampir seluruh fitur penting bahasa – bahasa 
+pemrograman yang ada semenjak perkembangan komputasi modern manusia : 
+* Dari SIMULA, bahasa pada tahun 65-an, bahasa yang paling mempengaruhi 
+Java sekaligus C++. Dari bahasa ini diadopsi bentukan – bentukan dasar dari 
+pemrograman berorientasi objek. 
+* Dari LISP – bahasa tahun 55-an. Diadopsi fasilitas garbage collection, serta 
+kemampuan untuk meniru generic list processing, meski fasilitas ini jarang 
+yang memanfaatkannya. 
+* Dari Algol – bahasa pada tahun 60-an, diambil struktur kendali yang 
+dimilikinya. 
+* Dari C++, diadopsi sintaks, sebagian semantiks dan exception handling 
+* Dari bahasa Ada, diambil strongly type, dan exception handling. 
+* Dari Objective C, diambil fasilitas interface. 
+* Dari bahasa SmallTalk, diambil pendekatan single-root class hiérarchie,
+dimana objek adalah satu kesatuan hirarki pewarisan 
+* Dari bahasa Eiffel, fasilitas assertion yang mulai diterapkan di sebagian JDK 
+1.4
 
-* Pengenalan Spring
-* Inversion Of Control
-* Application Context
-* Depedency Injection
-* Bean
-* Life Cycle
-* Event Listener
-* Dan lain-lain
+### Teknologi Java
+A. Sebuah Bahasa Pemrograman
+Java adalah bahasa pemrograman yang berorientasi objek (OOP) dan dapat 
+dijalankan pada berbagai platform sistem operasi. Perkembangan Java tidak hanya 
+terfokus oada satu sistem operasi, tetapi dikembangkan untuk berbagai sistem 
+operasi dan bersifat open source.
 
-### Pengenalan Spring Framework
-* Spring Framework adalah framework paling populer di Java
-* Saking Populernya,Spring Framework sampai mengalahkan popularitas Java Enterprise sendiri
-* Spring Framework Semakin Populer karena sangat ringan dan mudah digunakan dibandingkan Java Enterprise
-* [https://spring.io/]
+B. Sebuah Development Environment 
+Sebagai sebuah peralatan pembangun, teknologi Java menyediakan banyak tools : 
+compiler, interpreter, penyusun dokumentasi, paket kelas dan sebagainya. 
 
-### Pengenalan Spring Boot
-* Spring Boot merupakan framework untuk mempermudah pembuatan aplikasi Spring Framework
-* Dahulu untuk menggunakan Spring Framework, untuk pemula tidaklah mudah, karena terlalu banyak yang harus dilakukan sebelum bisa membuat aplikasi
-* Spring Boot menjadikan kompleksitas tersebut ditangani secara otomatis oleh Spring Boot, sehingga kita bisa membuat aplikasi * Spring Framework secara cepat tanpa harus melakukan pengaturan apapun
-* Spring Boot sekarang sudah menjadi salah satu framework wajib ketika kita ingin membuat aplikasi Spring Framework
+C. Sebuah Aplikasi 
+Aplikasi dengan teknologi Java secara umum adalah aplikasi serbt a guna yang dapat 
+dijalankan pada seluruh mesin yang memiliki Java Runtime Environment (JRE). 
 
-### Kenapa Menggunakan Spring?
-* Tidak bisa dipungkiri, saat ini Spring adalah satu-satunya framework paling populer di Java
-* Belum ada yang bisa menandingi popularitasnya di Java
-* Saking populernya, bahkan banyak perusahaan pindah ke JVM karena ingin menggunakan Spring-nya, bukan Java
-* Dengan banyaknya bahasa yang bisa berjalan di atas JVM, seperti Kotlin, Groovy dan Scala, maka secara programmer punya banyak pilihan bahasa pemrograman ketika menggunakan Spring Spring juga sudah banyak sekali diadopsi di banyak perusahaan, baik itu skala besar atau kecil
- 
-### Ekosistem Pendukung
-* Spring memiliki ekosistem pendukung yang sangat besar
-* Spring sendiri tidaklah digunakan untuk menggantikan framework yang sudah ada, melainkan menjahit framework-framework yang sudah ada, menjadi framework yang saling terintegrasi
-* Spring bisa digunakan terintegrasi dengan baik dengan Bean Validation, Java Persistence API, Servlet, dan lain-lain
-* Selain itu juga Spring bisa diintegrasikan dengan teknologi yang tidak standar bawaan Java, seperti MongoDB, Consul, Vault, Cassandra, dan lain-lain
+D. Sebuah Deployment Environment 
+Terdapat dua komponen utama dari Deployment Environment. Yang pertama adalah 
+JRE, yang terdapat pada paket J2SDK, mengandung kelas – kelas untuk semua 
+paket teknologi Java yang meliputi kelas dasar dari Java, komponen GUI dan 
+sebagainya. Komponen yang lain terdapat pada Web Browser. Hampir seluruh Web 
+Browser komersial menyediakan interpreter dan runtime environment dari teknologi 
+Java.
 
+### Mengapa Mempelajari JAVA? 
+Berdasarkan white paper resmi dari SUN, Java memiliki karakteristik berikut : 
+1. Sederhana (Simple) 
+Bahasa pemrograman Java menggunakan Sintaks mirip dengan C++ namun 
+sintaks pada Java telah banyak diperbaiki terutama menghilangkan 
+penggunaan pointer yang rumit dan multiple inheritance. Java juga 
+menggunakan automatic memory allocation dan memory garbage collection. 
+2. Berorientasi objek (Object Oriented) 
+Java mengunakan pemrograman berorientasi objek yang membuat program 
+dapat dibuat secara modular dan dapat dipergunakan kembali. Pemrograman 
+berorientasi objek memodelkan dunia nyata kedalam objek dan melakukan 
+interaksi antar objek-objek tersebut. 
+3. Terdistribusi (Distributed) 
+Java dibuat untuk membuat aplikasi terdistribusi secara mudah dengan adanya 
+libraries networking yang terintegrasi pada Java. 
+4. Interpreted 
+Program Java dijalankan menggunakan interpreter yaitu Java Virtual Machine 
+(JVM). Hal ini menyebabkan source code Java yang telah dikompilasi menjadi
+Java bytecodes dapat dijalankan pada platform yang berbeda-beda. 
+5. Robust 
+Java mempuyai reliabilitas yang tinggi. Compiler pada Java mempunyai 
+kemampuan mendeteksi error secara lebih teliti dibandingkan bahasa 
+pemrograman lain. Java mempunyai runtime-Exception handling untuk 
+membantu mengatasi error pada pemrograman. 
+6. Secure 
+Sebagai bahasa pemrograman untuk aplikasi internet dan terdistribusi, Java 
+memiliki beberapa mekanisme keamanan untuk menjaga aplikasi tidak 
+digunakan untuk merusak sistem komputer yang menjalankan aplikasi 
+tersebut. 
+7. Architecture Neutral 
+Program Java merupakan platform independent. Program cukup mempunyai 
+satu buah versi yang dapat dijalankan pada platform berbeda dengan Java 
+Virtual Machine. 
+8. Portable 
+Source code maupun program Java dapat dengan mudah dibawa ke platform 
+yang berbeda-beda tanpa harus dikompilasi ulang. 
+9. Performance 
+Performance pada Java sering dikatakan kurang tinggi. Namun performance 
+Java dapat ditingkatkan menggunakan kompilasi Java lain seperti buatan Inprise, Microsoft ataupun Symantec yang menggunakan Just In Time 
+Compilers (JIT). 
+10. Multithreaded 
+Java mempunyai kemampuan untuk membuat suatu program yang dapat 
+melakukan beberapa pekerjaan secara sekaligus dan simultan. 
+11. Dynamic 
+Java didesain untuk dapat dijalankan pada lingkungan yang dinamis. Perubahan 
+pada suatu class dengan menambahkan properties ataupun method dapat 
+dilakukan tanpa menggangu program yang menggunakan class tersebut. 
 
-* Membuat Project
-[https://start.spring.io/]  
+### Fitur Dari Java
+* Java Virtual Machine (JVM) 
+* Garbage Collection
+* Code Security
+
+### Fase-fase Pemrograman Java
+1. dalam pembuatan sebuah program berbasis Java adalah 
+menuliskan kode program pada text editor. Contoh text editor yang dapat digunakan antara lain : notepad, vi, emacs dan lain sebagainya. Kode program yang dibuat 
+2 kemudian tersimpan dalam sebuah berkas berekstensi .java. 
+3. Setelah membuat dan menyimpan kode program, kompilasi file yang berisi kode program tersebut dengan menggunakan Java Compiler. Hasil dari adalah berupa berkas bytecode dengan ekstensi .class. 
+4. Berkas yang mengandung bytecode tersebut kemudian akan dikonversikan oleh Java Interpreter menjadi bahasa mesin sesuai dengan jenis dan platform yang digunakan.
