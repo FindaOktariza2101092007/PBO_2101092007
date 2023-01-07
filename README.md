@@ -1,8 +1,10 @@
 # Modul 1 PBO TEORI finda
 
+# TUTORIAL SPRING BOOT DASAR
 
-<!-- ![Img 1](image/th.jpg) -->
 
+<!-- ![Img 1](image/judul.png) -->
+<!-- 
 ## Agenda
 
 * Pengenalan Spring
@@ -41,3 +43,45 @@
 
 * Membuat Project
 [https://start.spring.io/]  
+
+- Langkah awal adalah dengan cara membuat project ctrl + shift + N 
+![Img 2](image/1.PNG)
+- Selanjutnya Pilih Spring Boot Initializer Project
+- Lalu Next
+![Img 3](image/2.PNG)
+- Ganti Group,Artifact,PackageName,dan sesuaikan java version dengan version java di laptop anda
+- Kemudian Klik Next
+- dan Setelah diganti maka akan terlihat seperti dibawah berikut
+![Img 4](image/3.PNG)
+- Lalu Bikin Project Name
+![Img 5](image/4.PNG)
+- Lalu pilih depencies yang akan digunakan
+![Img 6](image/5.PNG)
+- dan Kemudian Tekan Finish
+
+##### Langkah-Langkah diatas hanya bisa dilakukan setelah memasang extensi dari springboot di Apache netbeans
+
+* Create File
+- Pertama kita klik icon new
+- lalu pilih java class
+![Img 7](image/6.png)
+- lalu buat nama class-nya
+seperti gambar dibawah berikut
+![Img 8](image/7.PNG)
+
+ 
+### Inversion of Control
+* Inversion of Control (IoC) merupakan prinsip dalam pembuatan perangkat lunak, dimana kita melakukan pemindahan kontrol untuk objek atau program ke sebuah container di framework
+* Tidak seperti biasanya ketika kita membuat aplikasi, dimana kita selalu melakukannya secara manual, dalam IoC, kita menyerahkan banyak pekerjakan ke container IoC 
+* Container IoC memiliki kontrol untuk melakukan eksekusi program kita, memanajemen object pada program kita dan melakukan abstraction terhadap program kita
+* Saat menggunakan framework IoC, kita biasanya akan mengikuti cara kerja framework tersebut
+Spring Inversion of Control
+* Spring bisa dibilang adalah framework IoC, dimana kita akan menyerahkan banyak sekali pekerjaan dalam program kita ke Spring
+* Kode program kita akan mengikuti cara kerja Spring
+Diagram Inversion of Control
+ 
+  
+ 
+### Link Video Youtube
+#### (TUTORIAL SPRING BOOT DASAR)
+[https://www.youtube.com/watch?v=VM3rwdMBORY] -->
