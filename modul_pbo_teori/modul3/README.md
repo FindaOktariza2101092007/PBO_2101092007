@@ -1,43 +1,29 @@
-# Modul PBO TEORI finda
+# Modul 3 PBO Teori_Finda Oktariza 
 
 
-![Img 1](image/th.jpg)
+## Pendahuluan
+IDE adalah sebuah peralatan dalam pemrograman yang diintegrasikan kedalam aplikasi software yang mendukung pembangunan GUI, text atau penulisan kode, compiler dan debugger.
+Tutorial ini menggunakan Ubuntu Dapper sebagai sistem operasinya. Sebelum
+menggunakan tutorial ini, pastikan bahwa telah menginstal Java dan NetBeans dalamsistem yang anda gunakan. Untuk instruksi dalam bagaimana cara menginstal Java danNetBeans, dapat dilihat pada Appendix A. Untuk versi Windows Xp dalam sesi ini, dapatdilihat pada Appendix B.
+Sebelum membahas lebih detail, pada awalnya akan kita lihat program Java pertama
+yang akan anda tulis.
 
-## Agenda
+### Program Java Pertama
+public class Hello 
+{ 
+ /**
+ * My first java program
+ */
+ public static void main(String[] args) {
+//Menampilkan kata "Hello world" dilayar
+ System.out.println("Hello world!"); 
+ } 
+}
 
-* Pengenalan Spring
-* Inversion Of Control
-* Application Context
-* Depedency Injection
-* Bean
-* Life Cycle
-* Event Listener
-* Dan lain-lain
+### Error
+1. Syntax Errors
+Syntax errors biasanya terjadi karena kesalahan penulisan. Mungkin Anda kekurangan sebuah perintah di Java atau lupa untuk menulis tanda titik-koma pada akhir pernyataan. Java mencoba untuk mengisolasi error tersebut dengan cara menunjukkan baris dari kode dan terlebih dahulu menunjuk karakter yang salah dalam baris tersebut. Bagaimanapun juga, error belum tentu berada pada titik yang ditunjuk.
+Kesalahan umum lainnya adalah dalam kapitalisasi, ejaan, penggunaan dari karakter khusus yang tidak benar, dan penghilangan dari pemberian tanda baca yang sebenarnya.
 
-### Pengenalan Spring Framework
-* Spring Framework adalah framework paling populer di Java
-* Saking Populernya,Spring Framework sampai mengalahkan popularitas Java Enterprise sendiri
-* Spring Framework Semakin Populer karena sangat ringan dan mudah digunakan dibandingkan Java Enterprise
-* [https://spring.io/]
-
-### Pengenalan Spring Boot
-* Spring Boot merupakan framework untuk mempermudah pembuatan aplikasi Spring Framework
-* Dahulu untuk menggunakan Spring Framework, untuk pemula tidaklah mudah, karena terlalu banyak yang harus dilakukan sebelum bisa membuat aplikasi
-* Spring Boot menjadikan kompleksitas tersebut ditangani secara otomatis oleh Spring Boot, sehingga kita bisa membuat aplikasi * Spring Framework secara cepat tanpa harus melakukan pengaturan apapun
-* Spring Boot sekarang sudah menjadi salah satu framework wajib ketika kita ingin membuat aplikasi Spring Framework
-
-### Kenapa Menggunakan Spring?
-* Tidak bisa dipungkiri, saat ini Spring adalah satu-satunya framework paling populer di Java
-* Belum ada yang bisa menandingi popularitasnya di Java
-* Saking populernya, bahkan banyak perusahaan pindah ke JVM karena ingin menggunakan Spring-nya, bukan Java
-* Dengan banyaknya bahasa yang bisa berjalan di atas JVM, seperti Kotlin, Groovy dan Scala, maka secara programmer punya banyak pilihan bahasa pemrograman ketika menggunakan Spring Spring juga sudah banyak sekali diadopsi di banyak perusahaan, baik itu skala besar atau kecil
- 
-### Ekosistem Pendukung
-* Spring memiliki ekosistem pendukung yang sangat besar
-* Spring sendiri tidaklah digunakan untuk menggantikan framework yang sudah ada, melainkan menjahit framework-framework yang sudah ada, menjadi framework yang saling terintegrasi
-* Spring bisa digunakan terintegrasi dengan baik dengan Bean Validation, Java Persistence API, Servlet, dan lain-lain
-* Selain itu juga Spring bisa diintegrasikan dengan teknologi yang tidak standar bawaan Java, seperti MongoDB, Consul, Vault, Cassandra, dan lain-lain
-
-
-* Membuat Project
-[https://start.spring.io/]  
+2. Run-time Errors
+Run-time error merupakan error yang tidak akan ditampilkan sampai anda menjalankan program anda. Bahkan program yang dicompile dengan sukses dapat menampilkan jawaban yang salah jika programmer belum berpikir sampai struktur dan proses logis dari program tersebut.
