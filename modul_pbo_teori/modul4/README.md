@@ -4,7 +4,7 @@
 
 ### Menganalisa program Java pertama saya
 
-[Img 1](images/1.png)
+![Img 1](modul_pbo_teori/images/1.png)
 Baris pertama kode : 
          public class HelloFinda 
 mengindikasikan nama class yaitu HelloFinda. Pada java semua kode seharusnya ditempatkan didalam deklarasi class. Kita melakukannya dengan menggunakan kata kunci class. Sebagai tambahan, class menggunakan akses khusus public, yang mengindikasikan bahwa class kita mempunyai akses bebas ke class yang lain dari package yang lain pula (package merupakan kumpulan class-class).
