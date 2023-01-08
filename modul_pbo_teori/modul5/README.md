@@ -1,43 +1,98 @@
-# Modul PBO TEORI finda
+# Modul 5 PBO TEORI finda oktariza
 
 
-![Img 1](image/th.jpg)
+## Mendapatkan Input dari Keyboard 
 
-## Agenda
+### Menggunakan BufferedReader untuk mendapatkan input
+ langkah-langkah yang diperlukan untuk mendapatkan input dari 
+keyboard: 
+1. Tambahkan di bagian paling atas code anda: 
+       import java.io.*; 
+2. Tambahkan statement ini: 
+     BufferedReader dataIn = new BufferedReader(new InputStreamReader(    System.in) ); 
+3. Deklarasikan variabel String temporer untuk mendapatkan input, dan gunakan fungsi readLine() untuk mendapatkan input dari keyboard. Anda harus mengetikkannya di dalam blok try-catch: 
+      try{ 
+       String temp = dataIn.readLine(); 
+       } 
+       catch( IOException e ){ 
+       System.out.println(“Error in getting input”); 
+       }
+  pada program Latihan3_finda menjelaskan :
+  Statement, 
+     import java.io.BufferedReader; 
+     import java.io.InputStreamReader; 
+     import java.io.IOException; 
+     
+menjelaskan bahwa kita akan menggunakan kelas BufferedReader, InputStreamReader dan IOException yang berada di java.io package. Java Application Programming Interface (API) sudah berisi ratusan kelas yang bisa digunakan untuk program anda. Kelas-kelas tersebut dikumpulkan ke dalam packages. 
+Packages memiliki kelas yang mempunyai fungsi yang saling berhubungan. Seperti pada contoh di atas, java.io package mengandung kelas-kelas yang memungkinkan program untuk melakukan input dan output data. Statement diatas juga dapat ditulis, 
+     import java.io.*; 
+yang akan mengeluarkan semua kelas yang berada pada paket, dan selanjutnya kita bisa menggunakan kelas-kelas tersebut pada program kita. 
 
-* Pengenalan Spring
-* Inversion Of Control
-* Application Context
-* Depedency Injection
-* Bean
-* Life Cycle
-* Event Listener
-* Dan lain-lain
+Dua statement selanjutnya, 
+     public class Latihan3_finda 
+     { 
+      public static void main( String[] args ){ 
+      
+Statement ini menyatakan bahwa kita mendeklarasikan sebuah class bernama GetInputFromKeyboard dan kita mendeklarasikan main method. 
 
-### Pengenalan Spring Framework
-* Spring Framework adalah framework paling populer di Java
-* Saking Populernya,Spring Framework sampai mengalahkan popularitas Java Enterprise sendiri
-* Spring Framework Semakin Populer karena sangat ringan dan mudah digunakan dibandingkan Java Enterprise
-* [https://spring.io/]
+Pada statement, 
+       BufferedReader dataIn = new BufferedReader(new 
+                      InputStreamReader( System.in) ); 
+                      
+kita mendeklarasikan sebuah variabel bernama dataIn dengan tipe kelas 
+BufferedReader. Jangan mengkhawatirkan tentang maksud dari syntax saat ini. 
 
-### Pengenalan Spring Boot
-* Spring Boot merupakan framework untuk mempermudah pembuatan aplikasi Spring Framework
-* Dahulu untuk menggunakan Spring Framework, untuk pemula tidaklah mudah, karena terlalu banyak yang harus dilakukan sebelum bisa membuat aplikasi
-* Spring Boot menjadikan kompleksitas tersebut ditangani secara otomatis oleh Spring Boot, sehingga kita bisa membuat aplikasi * Spring Framework secara cepat tanpa harus melakukan pengaturan apapun
-* Spring Boot sekarang sudah menjadi salah satu framework wajib ketika kita ingin membuat aplikasi Spring Framework
+Sekarang, kita akan mendeklarasikan variabel String dengan identifier name, 
+      String name = ""; 
+      
+Statement diatas merupakan tempat untuk menyimpan input dari user. Variabel name 
+diinisialisasi sebagai String kosong "". Sebaiknya kita selalu menginisialisasi sebuah variabel setelah kita mendeklarasikannya. 
 
-### Kenapa Menggunakan Spring?
-* Tidak bisa dipungkiri, saat ini Spring adalah satu-satunya framework paling populer di Java
-* Belum ada yang bisa menandingi popularitasnya di Java
-* Saking populernya, bahkan banyak perusahaan pindah ke JVM karena ingin menggunakan Spring-nya, bukan Java
-* Dengan banyaknya bahasa yang bisa berjalan di atas JVM, seperti Kotlin, Groovy dan Scala, maka secara programmer punya banyak pilihan bahasa pemrograman ketika menggunakan Spring Spring juga sudah banyak sekali diadopsi di banyak perusahaan, baik itu skala besar atau kecil
- 
-### Ekosistem Pendukung
-* Spring memiliki ekosistem pendukung yang sangat besar
-* Spring sendiri tidaklah digunakan untuk menggantikan framework yang sudah ada, melainkan menjahit framework-framework yang sudah ada, menjadi framework yang saling terintegrasi
-* Spring bisa digunakan terintegrasi dengan baik dengan Bean Validation, Java Persistence API, Servlet, dan lain-lain
-* Selain itu juga Spring bisa diintegrasikan dengan teknologi yang tidak standar bawaan Java, seperti MongoDB, Consul, Vault, Cassandra, dan lain-lain
+Baris berikutnya adalah memberikan output string pada layar menanyakan nama user. 
+       System.out.print("Please Enter Your Name:");
+       
+Sekarang, block di bawah ini merupakan try-catch block, 
+       try{ 
+        name = dataIn.readLine(); 
+       }catch( IOException e ){ 
+        System.out.println("Error!"); 
+       } 
+       
+Pada baris ini menjelaskan bahwa kemungkinan terjadi error pada statement 
+       name = dataIn.readLine(); 
+       
+menambahkan kode ini untuk menggunakan readLine() method dari BufferedReader 
+untuk mendapatkan input dari user. 
 
+Selanjutnya statement, 
+      name = dataIn.readLine(); 
+      
+method diatas memanggil dataIn.readLine(), mendapatkan input dari user dan 
+memberikan sebuah nilai String. Nilai ini akan disimpan ke dalam variabel name, yang akan kita gunakan pada statement akhir untuk menyambut user, 
+     System.out.println("Hello " + name + "!");
+             
+### Menggunakan JOptionPane untuk mendapatkan input
+Cara lain untuk mendapatkan input dari user adalah dengan menggunakan kelas 
+JoptionPane yang didapatkan dari javax.swing package. JoptionPane membuat 
+kemudahan dengan memunculkan dialog box standar yang memberikan kepada user 
+sebuah nilai atau menginformasikan sesuatu.
+contoh : program Latihan3_finda.java
 
-* Membuat Project
-[https://start.spring.io/]  
+Statement pertama, 
+    import javax.swing.JOptionPane; 
+Menjelaskan bahwa kita mengimport kelas JoptionPane dari javax.swing package. 
+Bisa juga ditulis, 
+     import javax.swing.*;
+     
+statement selanjutnya, 
+    name = JOptionPane.showInputDialog("Please enter your name"); 
+membuat sebuah JOptionPane input dialog, yang akan menampilkan dialog dengan 
+sebuah pesan, sebuah textfield dan tombol OK. Hasil dari dialog tersebut adalah String dan disimpan ke dalam variabel name. 
+
+membuat pesan selamat datang, yang akan disimpan ke dalam variabe 
+msg, 
+    String msg = "Hello " + name + "!";
+    
+Baris selanjutnya adalah menampilkan sebuah dialog yang memilki sebuah pesan dan tombol OK, 
+     JOptionPane.showMessageDialog(null, msg);
+
