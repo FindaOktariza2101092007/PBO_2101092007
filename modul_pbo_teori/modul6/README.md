@@ -1,20 +1,14 @@
-# Modul PBO TEORI finda
+# Modul 6 PBO TEORI finda oktariza
+
+## Struktur Kontrol 
+
+### Struktur Kontrol Keputusan
+#### Statement if 
+Statement-if menentukan sebuah statement (atau blok kode) yang akan dieksekusi jika dan hanya jika persyaratan boolean (boolean statement) bernilai true. dimana, boolean_expression adalah sebuah persyaratan boolean (boolean statement) atau boolean variabel.
+contoh pada program latihan1_finda.java
 
 
-![Img 1](image/th.jpg)
 
-## Agenda
-
-* Pengenalan Spring
-* Inversion Of Control
-* Application Context
-* Depedency Injection
-* Bean
-* Life Cycle
-* Event Listener
-* Dan lain-lain
-
-### Pengenalan Spring Framework
 * Spring Framework adalah framework paling populer di Java
 * Saking Populernya,Spring Framework sampai mengalahkan popularitas Java Enterprise sendiri
 * Spring Framework Semakin Populer karena sangat ringan dan mudah digunakan dibandingkan Java Enterprise
