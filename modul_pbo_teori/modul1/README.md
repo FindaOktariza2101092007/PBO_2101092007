@@ -120,7 +120,6 @@ penulisan dari bilangan oktal :
 Bilangan dalam sistem heksadesimal adalah sistem bilangan berbasis 16. Sistem ini 
 hanya memperbolehkan penggunaan bilangan dalam skala 0 – 9, dan menggunaan 
 huruf A – F, atau a – f karena perbedaan kapital huruf tidak memiliki efek apapun. 
-Berikut ini contoh penulisan bilangan pada sistem heksadesimal :
 
 
 
