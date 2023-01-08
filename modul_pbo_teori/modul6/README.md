@@ -110,10 +110,10 @@ Bentuk labeled form dari statement break akan menghentikan statement luar, diman
 * Continue statement 
 Statement continue memiliki dua bentuk: unlabeled dan labeled. Anda dapat 
 menggunakan statement continue untuk melewati pengulangan dari for, while, atau dowhile loop yang sedang berjalan. 
-** Unlabeled continue statement 
+a. Unlabeled continue statement 
 Bentuk unlabeled akan melewati akhir statement pada bagian yang dalam dan 
 memeriksa boolean expression yang mengkontrol loop, pada dasarnya akan melewati bagian pengulangan pada loop.
-** Labeled continue statement 
+b. Labeled continue statement 
 Bentuk labeled akan melanjutkan sebuah statement dengan melewati pengulangan yang sedang berjalan dari loop terluar yang diberi label (tanda).
 
 * Return statement 
